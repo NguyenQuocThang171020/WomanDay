@@ -5,6 +5,8 @@
     background-position: top center;
     font-family: helvetica neue, helvetica, arial, sans-serif;
     font-weight: 200;
+    z-index: 100;
+    position: relative;
 }
 .modal-container {
     position: fixed;
@@ -44,31 +46,26 @@
 }
 .modal-container .modal-background {
     display: table-cell;
-    background: rgba(0, 0, 0, .8);
+    background: #eb94b8;
     text-align: center;
     vertical-align: middle;
 }
 
 .modal-container .modal-background .modal {
     background: white;
-    padding: 50px;
+    padding: 20px;
     display: inline-block;
     border-radius: 3px;
-    font-weight: 300;
     position: relative;
 }
-
-.modal-container .modal-background .modal h2 {
-    font-size: 25px;
-    line-height: 25px;
-    margin-bottom: 15px;
-}
-
-.modal-container .modal-background .modal p {
+.modal-container .modal-background .modal {
     font-size: 18px;
-    line-height: 22px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+.modal-container .modal-background .modal h2{
+    color: #e42675;
+}
 .content {
     min-height: 100%;
     height: 100%;
@@ -77,21 +74,36 @@
     z-index: 0;
 }
 
-.content .button {
+ .button {
     display: inline-block;
     text-align: center;
     padding: 10px 15px;
     margin: 10px;
     font-size: 18px;
-    background-color: #efefef;
+    color: #e42675;
     border-radius: 3px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
     cursor: pointer;
+    border: 1px solid #e42675;
 }
 
-.content .button:hover {
+.button:hover {
     color: white;
-    background: #009bd5;
+    background: #e42675;
+}
+.close{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15%;
+    z-index: 1;
+}
+span{
+    color: #e42675;
+    font-weight: bold;
 }
 
 @keyframes fadeIn {
@@ -145,21 +157,21 @@
 
     80% {
         transform: translateX(0px);
-        border-radius: 75px;
-        height: 75px;
-        width: 75px;
+        border-radius: 50%;
+        height: 50%;
+        width: 50%;
     }
 
     90% {
         border-radius: 3px;
-        height: 182px;
-        width: 247px;
+        height: 50%;
+        width: 50%;
     }
 
     100% {
         border-radius: 3px;
-        height: 162px;
-        width: 227px;
+        height: 70%;
+        width: 70%;
     }
 }
 

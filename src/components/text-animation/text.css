@@ -1,4 +1,3 @@
-HTML CSSResult Skip Results Iframe
 .container {
   display: flex;
   justify-content: center;
@@ -7,15 +6,16 @@ HTML CSSResult Skip Results Iframe
   font-size: clamp(2rem, 2.8vw, 5rem);
   font-family: Raleway;
   font-weight: bold;
+  padding-top: 12%;
 }
 
 .typewriter {
-  width: 21.5ch;
+  width: 20ch;
   white-space: nowrap;
   overflow: hidden;
   border-right: 4px solid #212121;
   animation: cursor 1s step-start infinite, 
-    text 5s steps(18) alternate infinite;
+    text 3s steps(18) alternate infinite;
 }
 
 @keyframes cursor {
@@ -29,6 +29,6 @@ HTML CSSResult Skip Results Iframe
     width: 0; 
   }
   100% { 
-    width: 21.5ch; 
+    width: 20ch;
   }
 }

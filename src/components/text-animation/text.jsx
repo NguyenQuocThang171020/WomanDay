@@ -1,8 +1,10 @@
 import './text.css'
 const Text = () => {
     return (  
-    <div class="container">
-        <div class="typewriter">I'm Front end Developer</div>
+    <div className="container">
+        <div className="typewriter">
+            <p>Happy 8/3 nè <span>"红 莲"</span></p>
+        </div>
     </div>
     );
 }
